@@ -8,7 +8,7 @@ public class CreateTweetDelegate implements JavaDelegate {
     TwitterService twitter = new TwitterService();
 
     public void execute(DelegateExecution execution) throws Exception {
-        String content = "I did it! Cheers Benoît";
+        String content = (String) execution.getVariable("content");
         twitter.updateStatus(content);
     }
 }
