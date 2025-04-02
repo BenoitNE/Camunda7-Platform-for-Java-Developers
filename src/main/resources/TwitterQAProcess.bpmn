@@ -25,10 +25,6 @@
       <bpmn:incoming>Flow_17s7dan</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_17s7dan" sourceRef="Activity_0qiy6yp" targetRef="Event_13ayjex" />
-    <bpmn:userTask id="Activity_1b6aabl" name="Review Tweet" camunda:candidateGroups="management">
-      <bpmn:incoming>Flow_0l6bmq5</bpmn:incoming>
-      <bpmn:outgoing>Flow_0jcmp7v</bpmn:outgoing>
-    </bpmn:userTask>
     <bpmn:scriptTask id="Activity_0qiy6yp" name="Notify employee of rejection" scriptFormat="javascript">
       <bpmn:incoming>Flow_0vt17o8</bpmn:incoming>
       <bpmn:outgoing>Flow_17s7dan</bpmn:outgoing>
@@ -38,6 +34,10 @@
       <bpmn:incoming>Flow_0ddpaa8</bpmn:incoming>
       <bpmn:outgoing>Flow_01m0fjg</bpmn:outgoing>
     </bpmn:serviceTask>
+    <bpmn:userTask id="Activity_1b6aabl" name="Review Tweet" camunda:candidateGroups="management">
+      <bpmn:incoming>Flow_0l6bmq5</bpmn:incoming>
+      <bpmn:outgoing>Flow_0jcmp7v</bpmn:outgoing>
+    </bpmn:userTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="TwitterQAProcess">
@@ -65,14 +65,14 @@
           <dc:Bounds x="674" y="265" width="72" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1pr1j2r_di" bpmnElement="Activity_1b6aabl">
-        <dc:Bounds x="270" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_06lgdc0_di" bpmnElement="Activity_0qiy6yp">
         <dc:Bounds x="530" y="200" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0uko0ft_di" bpmnElement="Activity_14bfj80">
         <dc:Bounds x="530" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1x1i3te_di" bpmnElement="Activity_1b6aabl">
+        <dc:Bounds x="270" y="90" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0l6bmq5_di" bpmnElement="Flow_0l6bmq5">
         <di:waypoint x="218" y="130" />
