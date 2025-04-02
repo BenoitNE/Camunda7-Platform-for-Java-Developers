@@ -34,7 +34,7 @@
       <bpmn:incoming>Flow_0ddpaa8</bpmn:incoming>
       <bpmn:outgoing>Flow_01m0fjg</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:userTask id="Activity_1b6aabl" name="Review Tweet" camunda:candidateGroups="management">
+    <bpmn:userTask id="Activity_1b6aabl" name="Review Tweet" camunda:formKey="embedded:app:forms/review-tweet-form.html" camunda:candidateGroups="management">
       <bpmn:incoming>Flow_0l6bmq5</bpmn:incoming>
       <bpmn:outgoing>Flow_0jcmp7v</bpmn:outgoing>
     </bpmn:userTask>

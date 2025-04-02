@@ -85,7 +85,7 @@ class ProcessJUnitTest {
     assertThat(reviewTweetTask).isNotNull();
     LOGGER.info("Tâche à compléter : {}", reviewTweetTask.getName());
 
-    // 8️⃣ Compléter la tâche sans utiliser de 'approvedMap' (nous ne passons plus de "approved")
+    // 8️⃣ Compléter la tâche
     taskService.complete(reviewTweetTask.getId()); // Compléter la tâche sans la variable "approved"
     LOGGER.info("Tâche complétée avec succès.");
 
